@@ -9,12 +9,15 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 
 
-class SplashActivity  : AppCompatActivity(){
+class SplashActivity  : AppCompatActivity() {
 
     private val SPLASH_TIME_OUT: Long = 3000
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        window.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
         setContentView(R.layout.activity_splash_screen)
 
@@ -27,7 +30,3 @@ class SplashActivity  : AppCompatActivity(){
     }
 
     }
-
-
-
-
